@@ -7,7 +7,7 @@ function manipulateDomWithJSONAtKey(document, JSON, key) {
     let element = document.getElementById(key);
 
     element.innerHTML =
-    `<p>Aggrement: ${JSON.aggrement}</p>`
+    `<p>Aggrement: ${JSON.agreement}</p>`
     + `<p>Subjectivity: ${JSON.subjectivity}</p>`
     + `<p>Confidence: ${JSON.confidence}</p>`
     + `<p>Irony: ${JSON.irony}</p>`;
