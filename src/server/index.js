@@ -97,6 +97,6 @@ const responseJson = {
 	status: {"msg": "ok"},
 	aggrement: 'AGREEMENT',
 	subjectivity: 'OBJECTIVE',
-	confidende: '100',
+	confidence: '100',
 	irony: 'NONIRONIC'
 };
