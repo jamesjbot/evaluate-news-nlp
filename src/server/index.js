@@ -82,17 +82,6 @@ function meaningCloudAPIFetch(input) {
     return fetch(address);
 }
 
-function nlp() {
-  let json = {
-      'title': 'test json response',
-      'message': 'this is a message',
-      'time': 'now'
-  };
-
-  module.exports = json;
-  return json;
-}
-
 const responseJson = {
 	status: {"msg": "ok"},
 	aggrement: 'AGREEMENT',
