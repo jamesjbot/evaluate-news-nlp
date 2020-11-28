@@ -1,24 +1,12 @@
-function handleSubmit(event) {
-    event.preventDefault()
-    console.log("!!!Submit Button Presed!!!")
-    // check what text was put into the form field
-    let requestType = document.getElementById('requestType').value
-    console.log('The requested Type is:'+requestType)
-    //let formText = document.getElementById('name').value
-    if (requestType == 'SentimentAnalysis') {
-        Client.getSentiment()
-    } else if (requestType == 'Summarization'){
-        Client.getSummarization()
-    }
-    //Client.checkForName(formText)
-    //Client.getSummarization(formText)
 
-    // console.log("::: Form Submitted :::")
-    // fetch('http://localhost:8081/test')
-    // .then(res => res.json()) // Receive data from our server, convert to JSON
-    // .then(function(res) {
-    //     document.getElementById('results').innerHTML = res.score_tag
-    // })
+/*jshint esversion:8*/
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    let formText = document.getElementById('searchValue').value;
+    await Client.getSentiment(formText).then(message => {
+      Client.manipulateDomWithJSONAtKey(document, message,'results');
+    });
 }
 
-export { handleSubmit }
+export { handleSubmit };

@@ -1,6 +1,6 @@
 import { getSentiment } from './js/getSentiment'
-import { getSummarization } from './js/getSummarization'
 import { handleSubmit } from './js/formHandler'
+import { manipulateDomWithJSONAtKey } from './js/manipulateDom'
 
 import './styles/resets.scss'
 import './styles/base.scss'
@@ -11,6 +11,6 @@ import './styles/header.scss'
 
 export {
   getSentiment,
-  getSummarization,
+  manipulateDomWithJSONAtKey,
   handleSubmit
 }

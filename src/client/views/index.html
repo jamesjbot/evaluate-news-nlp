@@ -16,7 +16,7 @@
 
         <header>
             <div class="">
-                Sentiment Analysis and Summarization of a Website
+                Sentiment Analysis of a Website
             </div>
             <div class="">
                 navigation
@@ -27,12 +27,8 @@
             <section>
                 <form class="" onsubmit="return handleSubmit(event)">
                     <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name"></input>
-                    <label for="text">Text or Website:</label>
-                    <input id="" name="" type="text" value="" placeholder="Text or URL"></input>
-                    <select id="requestType" name="requestType">
-                      <option value="SentimentAnalysis">Sentiment Analysis</option>
-                      <option value="Summarization">Summarization</option>
-                    </select>
+                    <label for="text">Website:</label>
+                    <input id="searchValue" name="" type="text" value="" placeholder="Text or URL">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)">
                 </form>
             <section>

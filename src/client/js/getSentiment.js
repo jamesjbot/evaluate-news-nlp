@@ -1,18 +1,18 @@
-function getSentiment(inputText) {
-    console.log("getsentiment called")
-    // check what text was put into the form field
-    // let formText = document.getElementById('name').value
-    //
-    // //Client.checkForName(formText)
-    // //Client.getSummarization(formText)
-    //
-    // console.log("::: Form Submitted :::")
-    // fetch('http://localhost:8081/test')
-    // .then(res => res.json()) // Receive data from our server, convert to JSON
-    // .then(function(res) {
-    //     document.getElementById('results').innerHTML = res.score_tag
-    // })
 
+/*jshint esversion:8*/
+async function getSentiment(inputText) {
+    const jsonText = {data: inputText};
+    return fetch('http://localhost:7777/sentiment', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(jsonText)
+    })
+    .then(res => res.json()) // Receive JSON String, convert to JSON
+    .then(json => {return json;})
+    .catch(function(error) {
+      console.log('Sorry error with getting sentiment',error);
+    });
 }
 
-export { getSentiment }
+export { getSentiment };
