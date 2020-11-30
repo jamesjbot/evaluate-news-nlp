@@ -1,5 +1,11 @@
+
+@import "base";
+
 header {
+    background-color: $color-head;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+    justify-content: center;
+    padding: 50px 40px;
+    font-size: 64px;
+
 }

@@ -1,3 +1,9 @@
+
+$color-black: #0a043c; /* black */
+$color-footer: #03506f; /* dk blue */
+$color-grey: #bbbbbb; /* grey */
+$color-head: #FFE3D8; /* peach */
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,6 +11,7 @@ body {
 }
 
 main {
+    background-color: $color-black;
     flex: 2;
 }
 

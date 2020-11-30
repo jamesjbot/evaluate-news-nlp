@@ -1,46 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+      <script src="https://kit.fontawesome.com/7c8522fb5c.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
-        <title>Test</title>
-        <!--
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
-        -->
-        </head>
+        <title>Website Sentiment Analysis</title>
+
+      <!-- Borrowed Footer styling from https://webdevtrick.com/html-css-footer/ -->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="style.css">
+
+
+    </head>
 
     <body>
 
         <header>
-            <div class="">
+            <div class="title">
                 Sentiment Analysis of a Website
-            </div>
-            <div class="">
-                navigation
             </div>
         </header>
 
         <main>
             <section>
                 <form class="" onsubmit="return handleSubmit(event)">
-                    <label for="text">Website:</label>
+                    <label for="text">Enter a Website Address:</label>
                     <input id="searchValue" name="" type="text" value="" placeholder="URL">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
+                <form>
                 <strong>Form Results:</strong>
                 <div id="results"></div>
+              </form>
             </section>
         </main>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
+        <footer class="footer-distributed">
 
+            <!--<footer >-->
+
+            <div class="footer-left">
+
+              <h3>James Jongs <span>Engineering and Design</span></h3>
+              <p class='footer-links'>Copyright &#169; 2020 James Jongsurasithiwat All Rights Reserved</p>
+            </div>
+
+
+            <div class="footer-center">
+
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>169 California Drive</span> Buffalo, NY</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>716-555-2686</p>
+              </div>
+
+            </div>
+
+            <div class="footer-right">
+
+              <p class="footer-company-about">
+                <span>About James Jongs</span>
+                An iOS, Java, IOT, Automotive electronics engineer and designer.
+              </p>
+
+              <div class="footer-icons">
+                <a href='https://www.linkedin.com/in/jamesjongs/'><i class="fab fa-linkedin"></i></a>
+                <a href='https://github.com/jamesjbot'><i class="fab fa-github-square"></i></a>
+              </div>
+
+            </div>
+
+        </footer>
     </body>
 </html>
