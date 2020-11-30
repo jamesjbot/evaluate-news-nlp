@@ -5,10 +5,10 @@ import 'regenerator-runtime/runtime';
 
 
 const responseJson = {
-	'status': {"msg": "ok"},
-	'aggrement': 'AGREEMENT',
+	'status': {msg: "ok",code:'0'},
+	'agreement': 'AGREEMENT',
 	'subjectivity': 'OBJECTIVE',
-	'confidende': '100',
+	'confidence': '100',
 	'irony': 'NONIRONIC'
 };
 

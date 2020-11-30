@@ -7,7 +7,7 @@ function manipulateDomWithJSONAtKey(document, JSON, key) {
       let element = document.getElementById(key);
 
       element.innerHTML =
-      `<p>Aggrement: ${JSON.agreement}</p>`
+      `<p>Agreement: ${JSON.agreement}</p>`
       + `<p>Subjectivity: ${JSON.subjectivity}</p>`
       + `<p>Confidence: ${JSON.confidence}</p>`
       + `<p>Irony: ${JSON.irony}</p>`;
@@ -16,10 +16,9 @@ function manipulateDomWithJSONAtKey(document, JSON, key) {
 
     } else {
 
-      document.getElementById(key).textContent = 'Could not analyze website'
+      document.getElementById(key).textContent = 'Could not analyze website';
 
     }
-
 
 }
 
