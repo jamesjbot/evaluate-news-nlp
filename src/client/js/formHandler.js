@@ -5,11 +5,7 @@ async function handleSubmit(event) {
     event.preventDefault();
     let formText = document.getElementById('searchValue').value;
 
-    let validWebsiteAddress = false;
-    let regularExpression = new RegExp('^https?:\/\/[a-zA-Z]{3,}\.[a-zA-Z]{1,}\.[a-zA-Z]{3,}');
-    validWebsiteAddress = regularExpression.test(formText);
-
-    if (validWebsiteAddress) {
+    if ( validateEntry(formText) ) {
       // Notify the user that their request was submitted
       document.getElementById('results').textContent = 'Processing...';
 
@@ -25,4 +21,12 @@ async function handleSubmit(event) {
     }
 }
 
-export { handleSubmit };
+function validateEntry( website ) {
+  let validWebsiteAddress = false;
+  let regularExpression = new RegExp('^https?:\/\/[a-zA-Z]{3,}\.[a-zA-Z]{1,}\.[a-zA-Z]{3,}');
+  validWebsiteAddress = regularExpression.test(website);
+
+  return validWebsiteAddress;
+}
+
+export { handleSubmit, validateEntry };
