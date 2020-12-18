@@ -4,6 +4,10 @@ $color-footer: #03506f; /* dk blue */
 $color-grey: #bbbbbb; /* grey */
 $color-head: #FFE3D8; /* peach */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
