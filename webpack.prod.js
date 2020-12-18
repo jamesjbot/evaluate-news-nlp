@@ -4,11 +4,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     entry: './src/client/index.js',
-    mode: 'production',
-    output: {
-        libraryTarget: 'var',
-        library: 'Client'
-    },
+    //mode: 'production', TODO reinstate this
+    mode: 'development',
+    //output: { TODO reinstate this
+    //    libraryTarget: 'var',
+    //    library: 'Client'
+    //},
     module: {
         rules: [
             {

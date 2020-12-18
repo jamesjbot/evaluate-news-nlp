@@ -1,6 +1,7 @@
 import { getSentiment } from './js/getSentiment'
-import { handleSubmit } from './js/formHandler'
 import { manipulateDomWithJSONAtKey } from './js/manipulateDom'
+import { handleSubmit } from './js/formHandler'
+
 
 import './styles/resets.scss'
 import './styles/base.scss'
