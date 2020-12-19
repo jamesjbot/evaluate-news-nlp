@@ -7,13 +7,10 @@ jest.clearAllMocks();
 test("Testing manipulate dom function", () => {
 
   // Given: A basic HTML DOM
-  console.log('mani before:',document.body.outerHTML);
   document.body.outerHTML = '<div id="target">virgin text</div>';
 
   // When:
   manipulateDomWithJSONAtKey(document, responseJson, "target");
-
-  console.log('mani after:',document.body.outerHTML);
 
   // Then:
   let output = `<p>Agreement: AGREEMENT</p>`

@@ -12,7 +12,6 @@ const responseJson = {
 	'irony': 'NONIRONIC'
 };
 
-
 // A mocked version of fetch
 global.fetch = jest.fn( () => {
 	if (true) {
@@ -31,11 +30,12 @@ describe("Sentiment Analysis receipt test", () => {
 
 	test("Testing getSentiment() function", () => {
     // Given:
-		// A supplied compatbile response called responseJson
+		// A supplied compatible response called responseJson
 		// and a mocked version of fetch
-    // When:
+
+		// When:
 		// we request any website
-		return getSentiment('nonsensicalwebsite')
+		return getSentiment('somewebsite')
 		.then( res => {
 		// Then:
 			expect(res).toStrictEqual(responseJson);
@@ -46,5 +46,5 @@ describe("Sentiment Analysis receipt test", () => {
 				console.log(error)
 			});
 		});
-	})
+	});
 });
