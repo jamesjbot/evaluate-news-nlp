@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 // POST methods to receive sentiment analysis
 app.post('/sentiment', function (req, res) {
 
-  meaningCloudAPIFetch()
+  meaningCloudAPIFetch(req.body.data)
       .then(response => response)
       .then(data => data.json())
       .then(jsonData => {
