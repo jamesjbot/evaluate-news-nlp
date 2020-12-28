@@ -2,3 +2,7 @@ node_modules
 dist
 .env
 REQUIREMENTS.md
+jest.setup.Client.js
+src/client/js/__mocks__/foreignModule.js
+src/client/js/foreignModule.js
+src/client/js/localModule.js
